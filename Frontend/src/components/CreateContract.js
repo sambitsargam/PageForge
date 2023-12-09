@@ -77,7 +77,7 @@ function CreateContract({ account, provider, signer, switchNetwork, activeChain 
         data.name,
         data.purpose,
         activeChain.id,
-        cid,
+        cid || 'defaultCID',  // Provide a default value or handle empty string appropriately
         data.offerPrice,
         data.offerDescription,
         data.consultFee,
