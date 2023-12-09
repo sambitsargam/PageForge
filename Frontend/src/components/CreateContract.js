@@ -81,7 +81,8 @@ function CreateContract({ account, provider, signer, switchNetwork, activeChain 
         data.offerPrice,
         data.offerDescription,
         data.consultFee,
-        data.ens
+        data.ens,
+        data.email
       );
 
 
@@ -144,6 +145,14 @@ function CreateContract({ account, provider, signer, switchNetwork, activeChain 
                   placeholder="Your profile ENS"
                   prefix="ENS: "
                   value={data.ens}
+                />
+                  <h4>Enter your Email address</h4>
+                <Input
+                  aria-label="Email Id"
+                  onChange={(e) => updateData("email", e.target.value)}
+                  placeholder="Your Email Address"
+                  prefix="Email: "
+                  value={data.email}
                 />
 
                 <h4>Purpose / Headline</h4>

@@ -23,6 +23,7 @@ export const EXAMPLE_FORM = {
     "address": "0x5DAB34A2F418026E42f95D0eFd2AB4054fFD450E",
     "paymentAddress": "0x5DAB34A2F418026E42f95D0eFd2AB4054fFD450E",
     "ens": "sambitsargam.eth",
+    "email": "info@sambitsargam.in",
     "offerActive": true,
     "offerDescription": "Buy my web3 book",
     "offerPrice": .1,
