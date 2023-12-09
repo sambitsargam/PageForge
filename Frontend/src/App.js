@@ -76,7 +76,7 @@ function App() {
   const isLoggedIn = !!account;
 
   return (
-    <div className="App">
+    <div className="App" >
       <Layout>
       <Sider
           trigger={null}
@@ -132,7 +132,7 @@ function App() {
               &nbsp;
               {/* select chain */}
               <Select
-                style={{ width: 180 }}
+                style={{ width: 190 }}
                 value={activeChain.id}
                 onChange={(value) => {
                   const chain = CHAINS.find((chain) => chain.id === value)
@@ -153,6 +153,7 @@ function App() {
           style={{
             padding: 0,
             background: colorBgContainer,
+            backgroundColor: '#494c4d',
           }}
         >
           <Button
@@ -166,7 +167,7 @@ function App() {
             }}
           />
         </Header>
-        <Content>
+        <Content style={{ backgroundColor: '#edf4f5'}}>
           <div className="container">
             <Routes>
               <Route path="/" element={<Home />} />

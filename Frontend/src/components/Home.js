@@ -20,14 +20,14 @@ export const Home = () => {
   return <div className='home-section'>
     <Row className='home-section'>
       <Col span={12}>
-        <div className='prompt-section'>
+        <div className='prompt-section' style={{ size: "100px"}}>
           {/* <img src={logo} className='home-logo'/><br/> */}
           {APP_DESC}
 
         </div>
         {CHECKLIST_ITEMS.map((item, i) => {
           return (
-            <p key={i}>
+            <p key={i} style={{ fontSize: '20px' }}>
               <CheckCircleTwoTone twoToneColor="#00aa00" />
               &nbsp;
               {item}
