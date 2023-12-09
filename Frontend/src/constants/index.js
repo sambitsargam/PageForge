@@ -1,4 +1,4 @@
-import { scrollSepolia, xdcTestnet, neonDevnet, filecoinCalibration } from 'viem/chains'
+import { scrollSepolia, xdcTestnet, arbitrumGoerli, filecoinCalibration, celoAlfajores, mantleTestnet, polygonZkEvmTestnet, baseGoerli } from 'viem/chains'
 
 export const APP_NAME = 'PageForge'
 export const APP_DESC = 'Amplify Your Side Gig with Web3'
@@ -7,8 +7,13 @@ export const NEXTID_BASE_URL='https://proof-service.next.id/'
 
 export const CHAIN_OPTIONS = {
     [scrollSepolia.id]: scrollSepolia,
-    [neonDevnet.id]: neonDevnet,
+    [xdcTestnet.id]: xdcTestnet,
     [filecoinCalibration.id]: filecoinCalibration,
+    [arbitrumGoerli.id]: arbitrumGoerli,
+    [celoAlfajores.id]: celoAlfajores,
+    [mantleTestnet.id]: mantleTestnet,
+    [polygonZkEvmTestnet.id]: polygonZkEvmTestnet,
+    [baseGoerli.id]: baseGoerli,
 }
 
 export const CHAINS = Object.values(CHAIN_OPTIONS)
@@ -26,8 +31,8 @@ export const EXAMPLE_FORM = {
     "email": "info@sambitsargam.in",
     "offerActive": true,
     "offerDescription": "Buy my web3 book",
-    "offerPrice": .1,
-    "consultFee": .02
+    "offerPrice": 1,
+    "consultFee": 20
 }
 
 export const generateItem = (id) => {
